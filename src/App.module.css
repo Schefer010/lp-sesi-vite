@@ -1,0 +1,154 @@
+
+:root {
+    --dark: #0B090A;
+    --text: #ffffff;
+    --bg: #161A1D;
+    --red1: #c53695;
+    --red2: #A4161A;
+    --red3: #BA181B;
+    --red4: #E5383B;
+    --font: "Bebas Neue", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navItems {
+    backdrop-filter: blur (30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 999px;
+}
+
+.navItems img {
+    width: 30px;
+}
+
+.navItems:hover {
+    cursor: pointer;
+}
+
+.navItems a {
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 4px;
+    opacity: 0.8;
+    transition: all 200ms linear;
+    font-weight: 700;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.navItems a:hover {
+    text-shadow: 0px 3px 10px black;
+    opacity: 1;
+}
+.vid {
+    width: 60%;
+    height: 600px;
+}
+
+.s1 {
+    background-image: url('/bgnike.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(255, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.s2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    min-height: 70vh;
+}
+
+.s3{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.s4{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.card {
+    width: 300px;   
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    gap: 10px;
+    z-index: 100;
+
+
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.dahora{
+    transition: all 200ms ease-in-out;
+    align-items: center;
+    
+
+}
+
+.dahora:hover{
+    transform: scale(1.2) translateY(-10px);
+    z-index: 999;
+    
+}
+
+.botao{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.botao:hover{
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+@media (width <=1000px) {
+    .navWords {
+        display: none;
+    }
+
+    .vid {
+        width: 412px;
+    }
+}
